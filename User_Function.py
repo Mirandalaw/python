@@ -7,7 +7,7 @@ def add_number(n1,n2):
 def add_text(t1,t2):
     print(t1+t2)
 
-#전역변수
+#전역변수,지역변수
 param=10
 strdata="전역변수"
 
@@ -22,12 +22,12 @@ def func3():
     global param
     param=50
 
-func1()
-print(strdata)
+func1()         # 지역변수
+print(strdata)  # 전역변수
+                
+print(param)    # 10
+func2(param)     
+print(param)    # 10
 
-print(param)
-func2(param)
-print(param)
-
-func3()
-print(param)
+func3()       
+print(param)    # 50
