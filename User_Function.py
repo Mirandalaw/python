@@ -31,3 +31,25 @@ print(param)    # 10
 
 func3()       
 print(param)    # 50
+
+x=1
+y=2
+z=3
+
+#받은 인자를 뒤집어 주는 함수
+def reverse(x,y,z):
+    return z,y,x
+
+#실행 부분 정수형
+ret=reverse(x,y,z)
+print(ret)
+
+#실행부분 tuple형
+tupledata=reverse('a','b','c')
+print(tupledata)
+
+r1,r2,r3=reverse('a','b','c')
+print(r1,r2,r3)
+
+r4=reverse('a','b','c')
+print(r4)
